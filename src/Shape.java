@@ -1,4 +1,4 @@
-public class Shape implements Colorable{
+public abstract class Shape implements Colorable{
     private String color = "green";
     private boolean filled = true;
 
@@ -38,4 +38,7 @@ public class Shape implements Colorable{
     public void howToColor() {
         System.out.println("Color all four sides");
     }
+
+    @Override
+    public abstract void resize(double precent);
 }

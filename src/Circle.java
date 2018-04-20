@@ -36,6 +36,12 @@ public class Circle extends Shape {
                 + ", which is a subclass of "
                 + super.toString();
     }
+
+    @Override
+    public void resize(double precent) {
+        this.radius = this.radius + (this.radius * precent/100);
+    }
+
     public void howToCorlor(){
         super.howToColor();
     }
